@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@validators/*": [
+        "validators/*"
+      ],
+      "@constants": ["constants.ts"],
+      "@types": ["types.ts"]
+    }
+  },
+  "include": ["src", "examples"],
+  "exclude": ["node_modules"]
+}
