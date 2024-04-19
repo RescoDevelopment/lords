@@ -1,7 +1,8 @@
 # Simple yaml validator.
 
 ```ts
-import { yamlValidator, string, number } from "@resco/lords";
+import { yamlValidator } from "@resco/lords";
+import { string, number, minLength, minValue } from "@the-minimal/validator" // u need to install this dependency to use this, or u can just use ur own function that return true or false :)
 const yamlValidator = yamlValidator();
 
 const yamlData = `
