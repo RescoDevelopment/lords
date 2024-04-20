@@ -1,6 +1,6 @@
 import * as yaml from "js-yaml";
 
-interface ValidationFunction {
+export interface ValidationFunction {
   (value: any): unknown;
 }
 
