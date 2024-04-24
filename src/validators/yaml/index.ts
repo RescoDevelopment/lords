@@ -1,8 +1,6 @@
 import * as yaml from "js-yaml";
 
-export interface ValidationFunction {
-  (value: any): unknown;
-}
+export type ValidationFunction = (value: any) => unknown;
 
 const yamlValidator = () => {
   return {
