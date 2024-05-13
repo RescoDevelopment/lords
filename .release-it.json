@@ -6,7 +6,7 @@
     "publish": true
   },
   "github": {
-    "release": false
+    "release": true
   },
   "hooks": {
     "after:bump": "npx auto-changelog -p"
