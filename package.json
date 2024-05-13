@@ -1,8 +1,7 @@
 {
   "name": "@resco/lords",
-  "private": "false",
   "type": "module",
-  "version": "0.0.22",
+  "version": "0.0.1",
   "description": "A small utilies (lords) for projects.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
