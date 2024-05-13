@@ -1,6 +1,6 @@
 import { Or } from "@types";
 
-function quickSort<T = Or<string, number>>(arr: T[]): T[] {
+export function quickSort<T = Or<string, number>>(arr: T[]): T[] {
   if (arr.length <= 1) {
     return arr;
   }
@@ -14,5 +14,3 @@ function quickSort<T = Or<string, number>>(arr: T[]): T[] {
   }
   return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
 }
-
-export default quickSort;

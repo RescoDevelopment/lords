@@ -1,7 +1,7 @@
 type Listener<T> = (v: T) => Promise<void>;
 type Events = Record<string, unknown>;
 
-const EventEmitter = <$Events extends Events>() => {
+export const EventEmitter = <$Events extends Events>() => {
   const events = new Map<string, Set<Listener<unknown>>>();
 
   return {
@@ -43,5 +43,3 @@ const EventEmitter = <$Events extends Events>() => {
     },
   };
 };
-
-export default EventEmitter;

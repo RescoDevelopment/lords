@@ -6,6 +6,6 @@ function flattern(arr: any[], res: any[] = []): any[] {
   return res;
 }
 
-export default function flat(arr: any[]): any[] {
+export function flat(arr: any[]): any[] {
   return flattern(arr);
 }

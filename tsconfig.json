@@ -6,6 +6,7 @@
       "ESNext",
       "dom"
     ],
+    "types": ["./src/types.d.ts"],
     "moduleResolution": "node",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,7 +19,7 @@
         "validators/*"
       ],
       "@constants": ["constants.ts"],
-      "@types": ["types.ts"]
+      "@types": ["types.d.ts"]
     }
   },
   "include": ["src", "examples"],

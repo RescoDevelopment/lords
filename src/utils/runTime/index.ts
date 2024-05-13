@@ -1,4 +1,4 @@
-const runTime = <T extends (...args: any[]) => any>(
+export const runTime = <T extends (...args: any[]) => any>(
   fn: T,
   count: number,
   ...args: Parameters<T>[]
@@ -11,5 +11,3 @@ const runTime = <T extends (...args: any[]) => any>(
 
   return performance.now() - start;
 };
-
-export default runTime;

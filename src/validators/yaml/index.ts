@@ -2,7 +2,7 @@ import * as yaml from "js-yaml";
 
 export type ValidationFunction = (value: any) => unknown;
 
-const yamlValidator = () => {
+export const yamlValidator = () => {
   return {
     validate: (
       yamlData: string,
@@ -35,5 +35,3 @@ const yamlValidator = () => {
     },
   };
 };
-
-export default yamlValidator;

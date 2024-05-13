@@ -1,3 +1,2 @@
-import { Some } from "@types";
-const Some = <T>(value: T): Some<T> => ({ tag: "Some", value });
-export default Some;
+import { _Some } from "../../../types";
+export const Some = <T>(value: T): _Some<T> => ({ tag: "Some", value });
