@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import EventEmitter from "./index";
+import { EventEmitter } from "./index";
 
 test("EventEmitter - listen and publish events", async () => {
   const emitter = EventEmitter<{

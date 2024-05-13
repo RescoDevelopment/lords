@@ -1,6 +1,6 @@
 import { minLength, minValue, number, string } from "@the-minimal/validator";
 import { expect, test } from "vitest";
-import yamlValidator, { type ValidationFunction } from "./index";
+import { yamlValidator, type ValidationFunction } from "./index";
 
 test("yamlValidator - validate with valid YAML data", () => {
   const validator = yamlValidator();
@@ -55,6 +55,6 @@ test("yamlValidator - validate with missing key in YAML data", () => {
   };
 
   expect(() => validator.validate(yamlData, requirements)).toThrowError(
-    "Key 'value2' not found in YAML data",
+    "Key 'value2' not found in YAML data"
   );
 });

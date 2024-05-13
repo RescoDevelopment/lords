@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import quickSort from "./index";
+import { quickSort } from "./index";
 
 describe("Quick sort tests", () => {
   it("Includes duplicate numbers", () => {

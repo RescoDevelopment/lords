@@ -1,5 +1,5 @@
 import { test } from "vitest";
-import runTime from "./index";
+import { runTime } from "./index";
 
 test("runTime handles different function arguments", () => {
   const addNumbers = (a: number, b: number) => a * b;
