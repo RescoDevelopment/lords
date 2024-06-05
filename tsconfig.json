@@ -2,10 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "lib": [
-      "ESNext",
-      "dom"
-    ],
+    "lib": ["ESNext", "dom"],
     "types": ["./src/types.d.ts"],
     "moduleResolution": "node",
     "skipLibCheck": true,
@@ -15,9 +12,7 @@
     "strict": true,
     "baseUrl": "./src",
     "paths": {
-      "@validators/*": [
-        "validators/*"
-      ],
+      "@validators/*": ["validators/*"],
       "@constants": ["constants.ts"],
       "@types": ["types.d.ts"]
     }

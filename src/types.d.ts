@@ -8,3 +8,5 @@ export type _Some<T> = {
 
 export type None = { readonly tag: "None" };
 export type Option<T> = _Some<T> | None;
+
+export type ErrorPath = `${string}/${string}` | `${string}/${string}/${string}`;
