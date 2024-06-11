@@ -5,4 +5,4 @@ export const error =
     throw { provider, path, reason, ERROR: 1 };
   };
 
-export const isError = (value: any) => (value.ERROR == 1 ? true : false);
+export const isError = (value: any) => value.ERROR == 1;
