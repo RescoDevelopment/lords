@@ -3,7 +3,6 @@
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["ESNext", "dom"],
-    "types": ["./src/types.d.ts"],
     "moduleResolution": "node",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,7 +13,7 @@
     "paths": {
       "@validators/*": ["validators/*"],
       "@constants": ["constants.ts"],
-      "@types": ["types.d.ts"]
+      "@types": ["types.ts"]
     }
   },
   "include": ["src", "examples"],

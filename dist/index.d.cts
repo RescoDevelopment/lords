@@ -11,13 +11,16 @@ declare const runTime: <T extends (...args: any[]) => any>(fn: T, count: number,
 declare function flat(arr: any[]): any[];
 
 type Or<$Left, $Right> = $Left | $Right;
-
 type _Some<T> = {
-  readonly tag: "Some";
-  readonly value: T;
+    value: T;
 };
+type Option<T> = _Some<T> | undefined;
+type ErrorPath = `${string}/${string}` | `${string}/${string}/${string}`;
 
 declare function quickSort<T = Or<string, number>>(arr: T[]): T[];
+
+declare const error: (provider: string) => (path: ErrorPath, reason: string) => never;
+declare const isError: (value: any) => boolean;
 
 type ValidationFunction = (value: any) => unknown;
 declare const yamlValidator: () => {
@@ -26,4 +29,4 @@ declare const yamlValidator: () => {
 
 declare const Some: <T>(value: T) => _Some<T>;
 
-export { EventEmitter, Some, type ValidationFunction, flat, quickSort, runTime, yamlValidator };
+export { EventEmitter, type Option, Some, type ValidationFunction, error, flat, isError, quickSort, runTime, yamlValidator };
